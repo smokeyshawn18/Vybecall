@@ -41,7 +41,7 @@ const AvatarUpload: React.FC<AvatarUploadProps> = ({
 
   return (
     <div className="flex flex-col items-center space-y-4">
-      <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-teal-400 shadow-md">
+      <div className="w-24 h-24 rounded-full overflow-hidden border-1 border-teal-200 shadow-md">
         {previewUrl ? (
           <img
             src={previewUrl}
@@ -49,7 +49,7 @@ const AvatarUpload: React.FC<AvatarUploadProps> = ({
             className="object-cover w-full h-full"
           />
         ) : (
-          <div className="flex items-center justify-center w-full h-full bg-gray-700 text-teal-400 text-4xl font-bold select-none">
+          <div className="flex items-center justify-center w-full h-full bg-gray-900 text-teal-400 text-4xl font-bold select-none">
             ?
           </div>
         )}
@@ -65,7 +65,7 @@ const AvatarUpload: React.FC<AvatarUploadProps> = ({
       />
       <label
         htmlFor="avatar-upload"
-        className="cursor-pointer bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-md font-semibold transition"
+        className="cursor-pointer  bg-teal-100 hover:bg-teal-200 text-white px-4 py-2 rounded-md font-bold uppercase transition"
       >
         {previewUrl ? "Change Avatar" : "Upload Avatar"}
       </label>
